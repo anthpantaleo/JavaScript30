@@ -50,8 +50,10 @@
         // stop bubbling with this ^
       }
 
-      divs.forEach((div) =>
-        div.addEventListener("click", logText, { capture: false, once: true })
+      divs.forEach(
+        (div) =>
+          div.addEventListener("click", logText, { capture: false, once: true })
+        // once: true ;  tracks just one press of a button
       );
 
       // by default the capture is false
